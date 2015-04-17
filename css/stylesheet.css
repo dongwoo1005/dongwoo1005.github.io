@@ -10,6 +10,6 @@
 }
 
 .welcome {
-	background-image: url(images/bg_img1.JPG) no-repeat center center fixed;
-	background-color: #FF704D;
+	background-image: url('images/bg_img1.jpg');
+	height: 500px;
 }
