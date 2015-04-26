@@ -1,52 +1,208 @@
 <!DOCTYPE html>
-<html class="indexPage">
-	<head>
-		<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
-		<title>Dongwoo Son - Home</title>
-	</head>
-	<body>
-		
-		<div class="nav">
-			<div class="container">
+<html>
 
-				<div class="left">
-					<ul>
-						<li title="home"><a href="index.html">Dongwoo Son</a></li>
-					</ul>
-				</div>
+<head>
+    <!-- charecter enconding -->
+    <meta charset="utf-8">
+    <!-- highest standard mode supported by IE from IE6 to 11 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- for mobile optimization -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-				<div class="center">
-					<ul>
-						<li page='1'><a href="index.html">Home</a></li>
-						<li page='2'><a href="about.html">About</a></li>
-						<li page='3'><a href="projects.html">Projects</a></li>
-						<li page='4'><a href="#">Daily Post</a></li>
-						<li page='5'><a href="gallery.html">Gallery</a></li>
-						<li page='6'><a href="contact.html">Contact</a></li>
-					</ul>
-				</div>
+    <!-- Other metadata -->
+    <meta name="description" content="Web Portfolio">
+    <meta name="author" content="Dongwoo Son">
+    <meta name="keywords" content="Developer, Software Developer, Software Engineer, Portfolio, Developer Portfolio">
 
-				<div class="right">
-					<ul>
-						<li page='7'><a href="#">Sign Up</a></li>
-						<li page='8'><a href="#">Log In</a></li>
-						<li page='9'><a href="#">Help</a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
+    <!-- BootStrap -->
+    <link rel="stylesheet" href="../bootstrap-3.3.4-dist/css/bootstrap.min.css">
 
-		<div class="welcome">
-			<div class="container">	
-				<h1>Welcome to My WebPage!</h1>
-				<p>This webpage was designed to share my projects and daily life.</p>
-			</div>
-		</div>
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
 
-	<!--
-		<div class="footer">
-			<p>&copy; 2015 WebPage</p>
-		</div>
-	-->
-	</body>
+    <link rel="icon" href="#">
+    <title>Dongwoo Son | Developer</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+
+            <div class="navbar-header">
+                <button class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Dongwoo Son</a>
+            </div>
+
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right" id="top-nav">
+                    <li>
+                        <a href="#section-1">Home</a>
+                    </li>
+                    <li>
+                        <a href="#section-2">About</a>
+                    </li>
+                    <li>
+                        <a href="#section-3">Skills</a>
+                    </li>
+                    <li>
+                        <a href="#section-4">Work</a>
+                    </li>
+                    <li>
+                        <a href="#section-5">Blog</a>
+                    </li>
+                    <li>
+                        <a href="#section-6">Contact</a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://www.linkedin.com/in/dongwoo1005">LinkedIn</a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://github.com/dongwoo1005">GitHub</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="home" id="section-1">
+            <h1>Dongwoo Son</h1>
+            <p class="lead">
+                "I am a Software Developer"
+            </p>
+            <p>
+                <a href="#section-2">Learn More</a>
+            </p>
+        </div>
+    </div>
+    
+        
+    
+    <div class="container">
+        <div class="block" id="section-2">
+            <h1 class="page-header">About</h1>
+            <p>
+                Bachelor of Computer Science
+            </p>
+            <p>
+                @ University of Waterloo
+            </p>
+            <p>
+                in progress..
+            </p>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="block" id="section-3">
+           <h1 class="page-header">Skills</h1>
+           <div class="row">
+               <div class="col-md-4">
+                   <p>
+                       C/C++
+                   </p>
+               </div>
+               <div class="col-md-4">
+                   <p>
+                       HTML/CSS
+                   </p>
+               </div>
+               <div class="col-md-4">
+                   <p>
+                       Javascript/jQuery, Python
+                   </p>
+               </div>
+           </div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="block" id="section-4">
+            <h1 class="page-header">Work</h1>
+            <div>
+                <h3>Experience</h3>
+                <p>
+                    Software Quality Assurance for 8 months at Blackberry
+                    <br> Junior Software Engineer for 4 months at Synopex
+                    
+                </p>
+                <p>
+                     <br>
+                </p>
+            </div>
+
+            <div>
+                <h3>Personal Project</h3>
+                <p>
+                    <br>
+                </p>
+                <div>
+                    <img id="centerimg" class="img-responsive" src="image/SquareSwapper.png">
+                    <h4><a href="https://github.com/dongwoo1005/CandyCrush">Square Swapper 5000</a></h4>
+
+                    <p id="leftalign">Basically, it's Candy Crush Saga.</p>
+                    <p id="leftalign">A match-three style puzzle game that draws elements from popular games. The game is coded in C++. The controls are done through UNIX command line. The goal of the game is to beat the levels by meeting the requirements such as obtaining certain amount of scores, unlocking all the locked squares within a number of provided moves. The score goes up as you make matches of 3 or more squares. Available commands are: swap, hint, scramble, levelup, leveldown, restart. Using the command line arguments, you may run the game in text mode only, change the seed number, provide an initial board configuration, set start level, and turn on testing mode.
+                    </p>
+                </div> <!-- end Square Swapper section -->
+                
+                <p>
+                    <br>
+                </p>
+                
+                <div>
+                    <img id="centerimg" class="img-responsive" src="image/floodit.JPG">
+                    <h4><a href="https://github.com/dongwoo1005/Flood-It">Flood-It!</a></h2>
+                    <p id="leftalign">A copy of the game Flood-It! (http://floodit.appspot.com/), written in C++. The controls are done through UNIX command line. You may customize the grid board size, the number of initially provided moves in my version and the initial board configuration. The object of the game is to flood-fill the entire board with the same colour.</p>
+                </div> <!-- end FloodIt section -->
+
+            </div> <!-- end Personal Project section -->
+
+        </div> <!--end block-->
+    </div> <!--end container-->
+    
+    <div class="container">
+        <div class="block" id="section-5">
+           <h1 class="page-header">Blog</h1>
+            <p>404 Page Unavailable
+                <br>
+                Under construction
+            </p>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="block" id="section-6">
+            <h1 class="page-header">Contact</h1>
+            <p>d3son@uwaterloo.ca
+                <br>
+                +1 226-989-3230
+            </p>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="../bootstrap-3.3.4-dist/js/bootstrap.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script>
+        $('#top-nav').onePageNav({
+            currentClass: 'active',
+            changeHash: true,
+            scrollSpeed: 500
+         });
+
+    </script>
+</body>
+
 </html>
