@@ -1,5 +1,5 @@
 .home {
-    padding: 400px 15px;
+    /*padding: 400px 15px;*/
     text-align: center;
 }
 
@@ -44,7 +44,7 @@
 
 .contact-form {
     max-width: 450ox;
-    margin: 0 auto 50px;
+    margin: 0 auto 0;
     padding-top: 30px;
 }
 
@@ -105,4 +105,20 @@
 
 .project-name {
     padding-top: 30px;
+}
+
+.fp-prev{
+    border-width: 28.875px 25.5px 28.875px 0 !important;
+    border-top-color: transparent;
+    border-right-color: rgba(0,0,0,.25) !important;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+}
+
+.fp-next{
+    border-width: 28.875px 0 28.875px 25.5px !important;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: rgba(0,0,0,.25) !important;
 }

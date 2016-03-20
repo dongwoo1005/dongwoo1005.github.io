@@ -1,232 +1,241 @@
 <!DOCTYPE html>
 <html>
+  <!-- charecter enconding -->
+  <meta charset="utf-8">
+  <!-- highest standard mode supported by IE from IE6 to 11 -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- for mobile optimization -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Other metadata -->
+  <meta name="description" content="Web Portfolio">
+  <meta name="author" content="Dongwoo Son">
+  <meta name="keywords" content="Developer, Software Developer, Software Engineer, Portfolio, Developer Portfolio">
 
-<head>
-    <!-- charecter enconding -->
-    <meta charset="utf-8">
-    <!-- highest standard mode supported by IE from IE6 to 11 -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!-- for mobile optimization -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- BootStrap -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <!-- Icon -->
+  <link rel="stylesheet" href="css/mfglabs_iconset.css">
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+  <!-- fullpage js css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.8/jquery.fullPage.min.css">
 
-    <!-- Other metadata -->
-    <meta name="description" content="Web Portfolio">
-    <meta name="author" content="Dongwoo Son">
-    <meta name="keywords" content="Developer, Software Developer, Software Engineer, Portfolio, Developer Portfolio">
+  <title>Dongwoo Son | Developer</title>
 
-    <!-- BootStrap -->
-    <link rel="stylesheet" href="bootstrap-3.3.4-dist/css/bootstrap.min.css">
-
-    <!-- Icon -->
-    <link rel="stylesheet" href="css/mfglabs_iconset.css">
-   
-    <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
-
-    <title>Dongwoo Son | Developer</title>
-</head>
-
-<body>
-    <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
-
-            <div class="navbar-header">
-                <button class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">Dongwoo Son</a>
-            </div>
-
-            <div id="navbar" class="navbar-collapse collapse">
-                <ul class="nav navbar-nav navbar-right" id="top-nav">
-                    <li>
-                        <a href="#section-1">Home</a>
-                    </li>
-                    <li>
-                        <a href="#section-2">About</a>
-                    </li>
-                    <li>
-                        <a href="#section-3">Skills</a>
-                    </li>
-                    <li>
-                        <a href="#section-4">Work</a>
-                    </li>
-                    <li>
-                        <a href="#section-5">Blog</a>
-                    </li>
-                    <li>
-                        <a href="#section-6">Contact</a>
-                    </li>
-                    <li>
-                        <a href="pdf/Resume_UW_CS_WillSon.pdf"><i class="icon-sheet oir" id="myToolTip" data-toggle="tooltip" data-placement="bottom" title="View Resume/CV"></i></a>
-                    </li>
-                    <li>
-                        <a target="_blank" href="https://www.linkedin.com/in/dongwoo1005"><i class="icon-linked_in oir" id="myToolTip" data-toggle="tooltip" data-placement="bottom" title="Go to LinkedIn"></i></a>
-                    </li>
-                    <li>
-                        <a target="_blank" href="https://github.com/dongwoo1005"><i class="icon-git oir" id="myToolTip" data-toggle="tooltip" data-placement="bottom" title="Go to GitHub"></i></a>
-                    </li>
-
-                </ul>
-            </div>
-        </div>
-    </nav>
-
+  <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container">
-        <div class="home" id="section-1">
-            <h1>Dongwoo Son</h1>
-            <p class="lead">
-                "I am a Software Developer"
-            </p>
-            <p>
-                <a href="#learnMore" data-toggle="modal">Learn More</a>
-            </p>
+
+      <div class="navbar-header">
+        <button class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Dongwoo Son</a>
+      </div>
+
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right" id="top-nav">
+          <li data-menuanchor="firstPage">
+              <a href="#firstPage">Home</a>
+          </li>
+          <li data-menuanchor="secondPage">
+              <a href="#secondPage">About</a>
+          </li>
+          <li data-menuanchor="3rdPage">
+              <a href="#3rdPage">Skills</a>
+          </li>
+          <li data-menuanchor="4thPage">
+              <a href="#4thPage">Work</a>
+          </li>
+          <li data-menuanchor="5thPage">
+              <a href="#5thPage">Contact</a>
+          </li>
+<!--           <li data-menuanchor="6thPage">
+              <a href="#6thPage">Blog</a>
+          </li> -->
+          <li>
+              <a href="pdf/Resume_UW_CS_WillSon.pdf"><i class="icon-sheet oir" id="myToolTip" data-toggle="tooltip" data-placement="bottom" title="View Resume/CV"></i></a>
+          </li>
+          <li>
+              <a target="_blank" href="https://www.linkedin.com/in/dongwoo1005"><i class="icon-linked_in oir" id="myToolTip" data-toggle="tooltip" data-placement="bottom" title="Go to LinkedIn"></i></a>
+          </li>
+          <li>
+              <a target="_blank" href="https://github.com/dongwoo1005"><i class="icon-git oir" id="myToolTip" data-toggle="tooltip" data-placement="bottom" title="Go to GitHub"></i></a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div id="fullpage">
+    <div class="section" id="section0">
+      <div class="home" id="section-1">
+        <h1>Dongwoo Son</h1>
+        <p class="lead">
+            "I am a Software Developer"
+        </p>
+        <p>
+            <a href="#learnMore" data-toggle="modal">Learn More</a>
+        </p>
         </div>
     </div>
-    
-        
-    
-    <div class="container">
+    <div class="section" id="section1">
+      <div class="container">
         <div class="block" id="section-2">
-            <h1 class="page-header">About</h1>
-            <p class="lead">Bachelor of Computer Science</p>
-            <p>@ University of Waterloo</p>
-            <p>in progress..</p>
-            <div class="progress">
-                <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="62.5" aira-valuemin="0" aria-valuemax="100" style="width: 62.5%;">
-                </div>
+          <!-- <h1 class="page-header">About</h1> -->
+          <p class="lead">Bachelor of Computer Science</p>
+          <p>@ University of Waterloo</p>
+          <p>in progress..</p>
+          <div class="progress">
+            <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="62.5" aira-valuemin="0" aria-valuemax="100" style="width: 77.7%;">
             </div>
+          </div>
         </div>
+      </div>
     </div>
-    
-    <div class="container">
+    <div class="section" id="section2">
+      <div class="container">
         <div class="block" id="section-3">
-           <h1 class="page-header">Skills</h1>
+           <!-- <h1 class="page-header">Skills</h1> -->
            <div class="row">
-               <div class="col-md-4 col-sm-6">
-                   <p>
-                       C / C++ / Python
-                   </p>
-               </div>
-               <div class="col-md-4 col-sm-6">
-                   <p>
-                       HTML / CSS / JS / jQuery
-                   </p>
-               </div>
-               <div class="col-md-4 col-sm-6">
-                   <p>
-                       MySQL / MS SQL Server
-                   </p>
-               </div>
-
-               <div class="col-md-4 col-sm-6">
-                   <p>
-                       Team Player / Fast Learner
-                   </p>
-               </div>
-               <div class="col-md-4 col-sm-6">
-                   <p>
-                       Communication Skills
-                   </p>
-               </div>
-               <div class="col-md-4 col-sm-6">
-                   <p>
-                       Organization Skills
-                   </p>
-               </div>
+             <div class="col-sm-6 col-md-4">
+               <p>
+                  Language: C / C++ / Java / JavaScript / Ruby / Bash / Python / MATLAB / Scheme / Racket
+               </p>
+             </div>
+             <div class="col-sm-6 col-md-4">
+               <p>
+                  FrontEnd: HTML5 / CSS3 / JavaScript / jQuery / React JS / Angular JS
+               </p>
+             </div>
+             <div class="col-sm-6 col-md-4">
+               <p>
+                  DB: MySQL / MS SQL / PostgreSQL / MongoDB / Parse / Firebase
+               </p>
+             </div>
+             <div class="col-sm-6 col-md-4">
+               <p>
+                  Mobile: React Native / Android
+               </p>
+             </div>
+             <div class="col-sm-6 col-md-4">
+               <p>
+                 BackEnd: Ruby on Rails / Node JS / C# ASP.NET
+               </p>
+             </div>
+             <div class="col-sm-6 col-md-4">
+               <p>
+                 Version Control: Git / Subversion
+               </p>
+             </div>
+             <div class="col-sm-6 col-md-4">
+               <p>
+                 Team Player / Fast Learner
+               </p>
+             </div>
+             <div class="col-sm-6 col-md-4">
+               <p>
+                 Communication Skills
+               </p>
+             </div>
+             <div class="col-sm-6 col-md-4">
+               <p>
+                 Organization Skills
+               </p>
+             </div>
            </div>
         </div>
+      </div>
     </div>
-    
-    <div class="container">
-        <div class="block" id="section-4">
-            <h1 class="page-header">Work</h1>
+    <div class="section" id="section3">
+
+      <div class="slide" id="slide1">
+        <div class="container">
+          <div class="block" id="section-4">
             <div>
-                <h4>Experience</h4>
-                <ul>
-                    <li>Software Quality Assurance for 8 months at <a href="http://ca.blackberry.com/">Blackberry</a></li>
-                    <li>Junior Software Engineer for 4 months at <a href="http://www.synopex.com/">Synopex</a></li> 
-                </ul>
-                <p>
-                     <br>
-                </p>
+              <!-- <h4>Personal Project</h4> -->
+              <img id="centerimg" class="img-responsive" src="image/SquareSwapper.png">
+              <h4 class="project-name"><a href="https://github.com/dongwoo1005/CandyCrush">Square Swapper 5000</a></h4>
+              <p id="leftalign">Clone of Candy Crush Saga game in C++ with X11</p>
             </div>
-
-            <div>
-                <h4>Personal Project</h4>
-                <p>
-                    <br>
-                </p>
-                <div>
-                    <img id="centerimg" class="img-responsive" src="image/SquareSwapper.png">
-                  
-                    <h4 class="project-name"><a href="https://github.com/dongwoo1005/CandyCrush">Square Swapper 5000</a></h4>
-
-                    <p id="leftalign">Basically, it's Candy Crush Saga.</p>
-                    <p id="leftalign">A match-three style puzzle game. The game is coded in C++, designed and implemented in OOP way. Check out its <a href="pdf/uml.pdf">UML</a> and <a href="pdf/finalDesignDoc.pdf">design document</a> for details. 
-                    <br>
-                    The controls are done through UNIX command line. The goal of the game is to beat the levels by meeting the requirements such as obtaining certain amount of scores, unlocking all the locked squares within a number of provided moves. The score goes up as you make matches of 3 or more squares. Available commands are: swap, hint, scramble, levelup, leveldown, restart. Using the command line arguments, you may run the game in text mode only, change the seed number, provide an initial board configuration, set start level, and turn on testing mode.
-                    </p>
-                </div> <!-- end Square Swapper section -->
-                
-                <p>
-                    <br>
-                </p>
-                
-                <div>
-                    <img id="centerimg2" class="img-responsive" src="image/imageCompression.PNG">
-                    <h4 class="project-name"><a href="https://github.com/dongwoo1005/imageCompression">imageCompression</a></h2>
-                    <p id="leftalign"> It takes input of an original image and the drop tolerance number to compute a compressed image. Computation was done by dropping the Fourier coefficient having modulus less than provided tolerance number to 0 from every 8 x 8 subblock for each colour.
-                    </p>
-                    <p><br></p>
-                </div> <!-- end FloodIt section -->
-                
-                <div>
-                    <img id="centerimg" class="img-responsive" src="image/floodit.JPG">
-                    <h4 class="project-name"><a href="https://github.com/dongwoo1005/Flood-It">Flood-It!</a></h2>
-                    <p id="leftalign">A copy of the game <a href="http://floodit.appspot.com/">Flood-It!</a>, written in C++. The controls are done through UNIX command line. You may customize the grid board size, the number of initially provided moves in my version and the initial board configuration. The object of the game is to flood-fill the entire board with the same colour.</p>
-                </div> <!-- end FloodIt section -->
-                <div>
-                    <img id="centerimg" class="img-responsive" src="image/Breakout.png">
-                    <h4 class="project-name"><a href="https://github.com/dongwoo1005/Breakout">Breakout!</a></h2>
-                    <p id="leftalign">Breakout game developed on Java Swing</p>
-                </div> <!-- end Breakout section -->
-                <div>
-                    <img id="centerimg" class="img-responsive" src="image/Doodle.png">
-                    <h4 class="project-name"><a href="https://github.com/dongwoo1005/Doodle">Doodle!</a></h2>
-                    <p id="leftalign">Doodle application developed on Java Swing</p>
-                </div> <!-- end Doodle section -->
-                <div>
-                    <img id="centerimg" class="img-responsive" src="image/Fotag.png">
-                    <h4 class="project-name"><a href="https://github.com/dongwoo1005/Fotag">Fotag!</a></h2>
-                    <p id="leftalign">Fotag application developed on Java Swing</p>
-                </div> <!-- end Doodle section -->
-
-            </div> <!-- end Personal Project section -->
-
-        </div> <!--end block-->
-    </div> <!--end container-->
-    
-    <div class="container">
-        <div class="block" id="section-5">
-           <h1 class="page-header">Blog</h1>
-            <p class="lead">
-                404 Page Unavailabe
-            </p>
-            <p>
-                Under the construction
-            </p>
+          </div>
         </div>
-    </div>
-    
-    <div class="container">
-        <div class="block" id="section-6">
-            <h1 class="page-header">Contact</h1>
+      </div>
 
+      <div class="slide" id="slide2">
+        <div class="container">
+          <div class="block" id="section-4">
+            <div>
+              <!-- <h4>Personal Project</h4> -->
+              <img id="centerimg" class="img-responsive" src="image/Fotag.png">
+              <h4 class="project-name"><a href="https://github.com/dongwoo1005/Fotag">Fotag!</a></h2>
+              <p id="leftalign">Swing based Image Rating Application with MVC design</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="slide" id="slide3">
+        <div class="container">
+          <div class="block" id="section-4">
+            <div>
+              <!-- <h4>Personal Project</h4> -->
+              <img id="centerimg" class="img-responsive" src="image/Breakout.png">
+              <h4 class="project-name"><a href="https://github.com/dongwoo1005/Breakout">Breakout!</a></h4>
+              <p id="leftalign">Swing based Clone of Breakout game</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="slide" id="slide4">
+        <div class="container">
+          <div class="block" id="section-4">
+            <div>
+              <!-- <h4>Personal Project</h4> -->
+              <img id="centerimg" class="img-responsive" src="image/Doodle.png">
+              <h4 class="project-name"><a href="https://github.com/dongwoo1005/Doodle">Doodle!</a></h2>
+              <p id="leftalign">Swing based Painting Application with MVC design</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="slide" id="slide5">
+        <div class="container">
+          <div class="block" id="section-4">
+            <div>
+              <!-- <h4>Personal Project</h4> -->
+              <img id="centerimg" class="img-responsive" src="image/floodit.JPG">
+              <h4 class="project-name"><a href="https://github.com/dongwoo1005/Flood-It">Flood-It!</a></h4>
+              <p id="leftalign">Clone of Flood-It game in C++ with X11</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="slide" id="slide6">
+        <div class="container">
+          <div class="block" id="section-4">
+            <div>
+              <!-- <h4>Personal Project</h4> -->
+              <img id="centerimg2" class="img-responsive" src="image/imageCompression.PNG">
+              <h4 class="project-name"><a href="https://github.com/dongwoo1005/imageCompression">Image Compression</a></h4>
+              <p id="leftalign">Image Compression Using Fourier Coefficient with MATLAB</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="section" id="section4">
+      <div class="container">
+        <div class="block" id="section-6">
+            <!-- <h1 class="page-header">Contact</h1> -->
             <p class="lead">I would love to work with you! Get in touch with me</p>
-            <p>I'm currently looking for a Junior-Intermediate Developer co-op position anywhere in Canada from May to the end of August.</p>
+            <p>I'm currently looking for a software engineer position anywhere in US / Canada from January 2017 to April 2017</p>
             <form class="contact-form" action="//formspree.io/woos931005@hotmail.com"
                   method="POST">        
                 <div class="contact-info">
@@ -236,24 +245,17 @@
                     <label><span>Your Email</span>
                     <input type="email" name="_replyto"></label>
                 </div>
-                
-                
                 <label><span>Tell me about your project</span>
                 <textarea name="message"></textarea></label>
                 <div class="submit-wrap">
                     <input class="btn btn-primary submit-btn" type="submit" value="Send">
                 </div>
-                
             </form>
-            
-            
-            
-            
-            
         </div>
+      </div>
     </div>
-    
-    <footer class="site-footer">
+    <div class="section fp-auto-height">
+      <footer class="site-footer">
        <div class="container">
           <div class="row">
               <p class="text-center">Copyright &copy 2015, Dongwoo Son<br></p>
@@ -264,10 +266,10 @@
           </div>
        </div>
     </footer>
+    </div>
+  </div>
 
-
-
-    <div class="modal fade" id="learnMore" role="dialog">
+  <div class="modal fade" id="learnMore" role="dialog">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -276,7 +278,7 @@
                 <div class="modal-body">
                    <blockquote>
                        <p>A Software Developer "make" software for the world to use. The work includes <em>researching, designing, implementing,</em> and <em>testing software</em>. </p>
-                       <footer><cite title="Wikipedia">Wikipedia</cite></footer>
+                       <!-- <footer><cite title="Wikipedia">Wikipedia</cite></footer> -->
                    </blockquote>
                     
                 </div>
@@ -287,25 +289,31 @@
         </div>
     </div>
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script src="bootstrap-3.3.4-dist/js/bootstrap.min.js"></script>
-    <script src="js/plugins.js"></script>
-    <script>
-        $('#top-nav').onePageNav({
-            currentClass: 'active',
-            changeHash: true,
-            scrollSpeed: 500
-         });
-    </script>
-    <script>
-        $(function () {
-          $('[data-toggle="tooltip"]').tooltip()
-        })
-    </script>
-    
-</body>
 
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.8/jquery.fullPage.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  <script src="js/plugins.js"></script>
+  <script>
+      $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+      })
+  </script>
+  <script>
+    $(document).ready(function() {
+      $('#fullpage').fullpage({
+        // sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
+        anchors: ['firstPage', 'secondPage', '3rdPage', '4thPage', '5thPage', '6thPage'],
+        menu: '#top-nav',
+        scrollingSpeed: 600,
+        slidesNavigation: true,
+        loopTop: true,
+        loopBottom: true
+      });
+
+    });
+  </script>
 </html>
+
+
