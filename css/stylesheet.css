@@ -105,6 +105,7 @@
 
 .project-name {
     padding-top: 30px;
+    text-align: center;
 }
 
 .fp-prev{
@@ -125,4 +126,8 @@
 
 .ct-label{
     font-size: 1rem !important;
+}
+
+.myproject p{
+    text-align: center;
 }
