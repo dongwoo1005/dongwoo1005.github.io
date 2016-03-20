@@ -19,6 +19,8 @@
   <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
   <!-- fullpage js css -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.8/jquery.fullPage.min.css">
+  <!-- chartist js css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
 
   <title>Dongwoo Son | Developer</title>
 
@@ -43,10 +45,10 @@
               <a href="#secondPage">About</a>
           </li>
           <li data-menuanchor="3rdPage">
-              <a href="#3rdPage">Skills</a>
+              <a href="#3rdPage">Works</a>
           </li>
           <li data-menuanchor="4thPage">
-              <a href="#4thPage">Work</a>
+              <a href="#4thPage">Skills</a>
           </li>
           <li data-menuanchor="5thPage">
               <a href="#5thPage">Contact</a>
@@ -70,6 +72,7 @@
   </nav>
 
   <div id="fullpage">
+
     <div class="section" id="section0">
       <div class="home" id="section-1">
         <h1>Dongwoo Son</h1>
@@ -81,6 +84,7 @@
         </p>
         </div>
     </div>
+
     <div class="section" id="section1">
       <div class="container">
         <div class="block" id="section-2">
@@ -95,62 +99,8 @@
         </div>
       </div>
     </div>
-    <div class="section" id="section2">
-      <div class="container">
-        <div class="block" id="section-3">
-           <!-- <h1 class="page-header">Skills</h1> -->
-           <div class="row">
-             <div class="col-sm-6 col-md-4">
-               <p>
-                  Language: C / C++ / Java / JavaScript / Ruby / Bash / Python / MATLAB / Scheme / Racket
-               </p>
-             </div>
-             <div class="col-sm-6 col-md-4">
-               <p>
-                  FrontEnd: HTML5 / CSS3 / JavaScript / jQuery / React JS / Angular JS
-               </p>
-             </div>
-             <div class="col-sm-6 col-md-4">
-               <p>
-                  DB: MySQL / MS SQL / PostgreSQL / MongoDB / Parse / Firebase
-               </p>
-             </div>
-             <div class="col-sm-6 col-md-4">
-               <p>
-                  Mobile: React Native / Android
-               </p>
-             </div>
-             <div class="col-sm-6 col-md-4">
-               <p>
-                 BackEnd: Ruby on Rails / Node JS / C# ASP.NET
-               </p>
-             </div>
-             <div class="col-sm-6 col-md-4">
-               <p>
-                 Version Control: Git / Subversion
-               </p>
-             </div>
-             <div class="col-sm-6 col-md-4">
-               <p>
-                 Team Player / Fast Learner
-               </p>
-             </div>
-             <div class="col-sm-6 col-md-4">
-               <p>
-                 Communication Skills
-               </p>
-             </div>
-             <div class="col-sm-6 col-md-4">
-               <p>
-                 Organization Skills
-               </p>
-             </div>
-           </div>
-        </div>
-      </div>
-    </div>
-    <div class="section" id="section3">
 
+    <div class="section" id="section2">
       <div class="slide" id="slide1">
         <div class="container">
           <div class="block" id="section-4">
@@ -228,8 +178,73 @@
           </div>
         </div>
       </div>
-
     </div>
+
+<!--     <div class="section" id="section3">
+      <div class="container">
+        <div class="block" id="section-3">
+           <div class="row">
+             <div class="col-sm-6 col-md-4">
+               <p>
+                  Language: C / C++ / Java / JavaScript / Ruby / Bash / Python / MATLAB / Scheme / Racket
+               </p>
+             </div>
+             <div class="col-sm-6 col-md-4">
+               <p>
+                  FrontEnd: HTML5 / CSS3 / JavaScript / jQuery / React JS / Angular JS
+               </p>
+             </div>
+             <div class="col-sm-6 col-md-4">
+               <p>
+                  DB: MySQL / MS SQL / PostgreSQL / MongoDB / Parse / Firebase
+               </p>
+             </div>
+             <div class="col-sm-6 col-md-4">
+               <p>
+                  Mobile: React Native / Android
+               </p>
+             </div>
+             <div class="col-sm-6 col-md-4">
+               <p>
+                 BackEnd: Ruby on Rails / Node JS / C# ASP.NET
+               </p>
+             </div>
+             <div class="col-sm-6 col-md-4">
+               <p>
+                 Version Control: Git / Subversion
+               </p>
+             </div>
+             <div class="col-sm-6 col-md-4">
+               <p>
+                 Team Player / Fast Learner
+               </p>
+             </div>
+             <div class="col-sm-6 col-md-4">
+               <p>
+                 Communication Skillss
+               </p>
+             </div>
+             <div class="col-sm-6 col-md-4">
+               <p>
+                 Organization Skills
+               </p>
+             </div>
+           </div>
+        </div>
+      </div>
+    </div> -->
+
+    <div class="section" id="section3">
+      <div class="container">
+        <!-- <div class="block"> -->
+          <div class="ct-chart ct-major-eleventh" id="chart1"></div>
+          <!-- <div class="ct-chart ct-double-octave" id="chart2"></div> -->
+        <!-- </div> -->
+      </div>
+    </div>
+
+    
+
     <div class="section" id="section4">
       <div class="container">
         <div class="block" id="section-6">
@@ -293,8 +308,10 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.8/jquery.fullPage.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
   <script src="js/plugins.js"></script>
+  <script src="js/mychart.js"></script>
   <script>
       $(function () {
         $('[data-toggle="tooltip"]').tooltip()
