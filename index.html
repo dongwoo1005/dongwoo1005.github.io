@@ -74,7 +74,13 @@
   <div id="fullpage">
 
     <div class="section" id="section0">
-      <div class="home" id="section-1">
+
+      <video autoplay loop muted id="myVideo">
+        <source src="image/MP4/Head-or-Tails.mp4" type="video/mp4">
+        <source src="image/WEBM/Head-or-Tails.webm" type="video/webm">
+      </video>
+
+      <div class="home layer" id="section-1">
         <h1>Dongwoo Son</h1>
         <p class="lead">
             "I am a Software Developer"
@@ -271,6 +277,10 @@
         slidesNavigation: true,
         loopTop: true,
         loopBottom: true,
+        afterRender: function(){
+          //playing the video
+          $('video').get(0).play();
+        },
         afterLoad: function(anchorLink, index){
             var loadedSection = $(this);
 
