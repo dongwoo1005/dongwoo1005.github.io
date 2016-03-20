@@ -55,9 +55,9 @@ var seq = 0,
   durations = 500;
 
 // Once the chart is fully created we reset the sequence
-// chart.on('created', function() {
-//   seq = 0;
-// });
+chart.on('created', function() {
+  seq = 0;
+});
 
 // On each drawn element by Chartist we use the Chartist.Svg API to trigger SMIL animations
 chart.on('draw', function(data) {
