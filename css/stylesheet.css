@@ -133,11 +133,44 @@
     .ct-label{
         font-size: 1.25rem !important;
     }
+    .ct-horizontal{
+        /* Safari */
+        -webkit-transform: rotate(-90deg) !important;
+
+        /* Firefox */
+        -moz-transform: rotate(-90deg) !important;
+
+        /* IE */
+        -ms-transform: rotate(-90deg) !important;
+
+        /* Opera */
+        -o-transform: rotate(-90deg) !important;
+
+        /* Internet Explorer */
+        filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3) !important;
+    }
+}
 
 /*tablet*/
 @media only screen and (min-width: 481px) and (max-width: 768px){
     .ct-label{
         font-size: 1.1rem !important;
+    }
+    .ct-horizontal{
+        /* Safari */
+        -webkit-transform: rotate(-90deg) !important;
+
+        /* Firefox */
+        -moz-transform: rotate(-90deg) !important;
+
+        /* IE */
+        -ms-transform: rotate(-90deg) !important;
+
+        /* Opera */
+        -o-transform: rotate(-90deg) !important;
+
+        /* Internet Explorer */
+        filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3) !important;
     }
 }
 
@@ -145,6 +178,22 @@
 @media only screen and (max-width: 480px){
     .ct-label{
         font-size: 1.25rem !important;
+    }
+    .ct-horizontal{
+        /* Safari */
+        -webkit-transform: rotate(-90deg) !important;
+
+        /* Firefox */
+        -moz-transform: rotate(-90deg) !important;
+
+        /* IE */
+        -ms-transform: rotate(-90deg) !important;
+
+        /* Opera */
+        -o-transform: rotate(-90deg) !important;
+
+        /* Internet Explorer */
+        filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3) !important;
     }
 }
 
@@ -186,3 +235,16 @@
 #section0{
     overflow: hidden;
 }
+/*
+.ct-chart-bar .ct-label.ct-horizontal.ct-end {
+  display: block !important; 
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  white-space: nowrap !important;
+  transform: rotate(-30deg) !important;
+  transform-origin: 100% 0 !important;
+  text-align: right !important;
+  max-height: 1.5em !important;
+  min-width: 100px !important;
+  max-width: 100px !important;
+}*/
