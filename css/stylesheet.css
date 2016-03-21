@@ -125,7 +125,27 @@
 }
 
 .ct-label{
-    font-size: 1.25rem !important;
+    font-size: 1rem !important;
+}
+
+/*destktop*/
+@media only screen and (min-width: 992px){
+    .ct-label{
+        font-size: 1.25rem !important;
+    }
+
+/*tablet*/
+@media only screen and (min-width: 481px) and (max-width: 768px){
+    .ct-label{
+        font-size: 1.1rem !important;
+    }
+}
+
+/*mobile*/
+@media only screen and (max-width: 480px){
+    .ct-label{
+        font-size: 1.25rem !important;
+    }
 }
 
 .myproject p{

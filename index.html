@@ -57,7 +57,10 @@
               <a href="#6thPage">Blog</a>
           </li> -->
           <li>
-              <a href="pdf/Resume_UW_CS_WillSon.pdf"><i class="icon-sheet oir" id="myToolTip" data-toggle="tooltip" data-placement="bottom" title="View Resume/CV"></i></a>
+              <a href="pdf/Resume_UW_CS_WillSon.pdf">
+          <!--       <i class="icon-sheet oir" id="myToolTip" data-toggle="tooltip" data-placement="bottom" title="View Resume/CV"></i> -->
+                Resume
+              </a>
           </li>
           <li>
               <a target="_blank" href="https://www.linkedin.com/in/dongwoo1005"><i class="icon-linked_in oir" id="myToolTip" data-toggle="tooltip" data-placement="bottom" title="Go to LinkedIn"></i></a>
@@ -114,7 +117,8 @@
             <div class="myproject">
               <img id="centerimg" class="img-responsive" src="image/Carpool.png">
               <h4 class="project-name"><a href="https://github.com/dongwoo1005/WaterlooCarpool">Waterloo Carpool</a></h4>
-              <p>Waterloo Carpool iOS application developed with React Native</p>
+              <p>Waterloo Carpool iOS application</p>
+              <p>Developed with React Native / Parse / Firebase.</p>
             </div>
           </div>
         </div>
@@ -126,7 +130,9 @@
             <div class="myproject">
               <img id="centerimg" class="img-responsive" src="image/jewlrwork.png">
               <h4 class="project-name"><a href="https://jewlr.com">Work from Jewlr</a></h4>
-              <p>Homepage rework from Jewlr. Details of work listed in LinkedIn. Click above to browse Jewlr homepage.</p>
+              <p>Homepage rework from Jewlr. </p>
+              <p>Stacks used: Ruby on Rails. HTML5 / SCSS / JavaScript / jQuery / MySQL.  </p>
+              <p>Details of work listed in <a href="https://www.linkedin.com/in/dongwoo1005">LinkedIn</a>. <a href="https://jewlr.com">Click</a> to browse Jewlr homepage.</p>
             </div>
           </div>
         </div>
@@ -138,7 +144,7 @@
             <div class="myproject">
               <img id="centerimg" class="img-responsive" data-src="image/FotagGif.gif">
               <h4 class="project-name"><a href="https://github.com/dongwoo1005/Fotag">Fotag!</a></h2>
-              <p>Swing based Image Rating Application with MVC design</p>
+              <p>Java Swing based Image Rating Application with MVC design</p>
             </div>
           </div>
         </div>
@@ -151,7 +157,7 @@
               <!-- <h4>Personal Project</h4> -->
               <img id="centerimg" class="img-responsive" data-src="image/BreakoutGif.gif">
               <h4 class="project-name"><a href="https://github.com/dongwoo1005/Breakout">Breakout!</a></h4>
-              <p>Swing based Clone of Breakout game</p>
+              <p>Java Swing based Clone of Breakout game</p>
             </div>
           </div>
         </div>
@@ -164,7 +170,7 @@
               <!-- <h4>Personal Project</h4> -->
               <img id="centerimg" class="img-responsive" data-src="image/DoodleGif.gif">
               <h4 class="project-name"><a href="https://github.com/dongwoo1005/Doodle">Doodle!</a></h2>
-              <p>Swing based Painting Application with MVC design</p>
+              <p>Java Swing based Painting Application with MVC design</p>
             </div>
           </div>
         </div>
@@ -310,7 +316,7 @@
 
             //using anchorLink
             if(anchorLink == 'skills'){
-              var chart = new Chartist.Bar('.ct-chart', {
+              var data = {
                 labels: ['Basic FrontEnd: HTML5 / CSS3 / JavaScript', 
                          'FrontEnd Library: jQuery / React JS / Angular JS', 
                          'Web Framework: Ruby on Rails', 
@@ -318,11 +324,13 @@
                          'NoSQL: MongoDB', 'Baas: Parse / Firebase', 
                          'Version Control: Git / Subversion', 
                          'Mobile: Android / React Native',
-                         'Low-Level Language: Assembly / C',
-                         'OOP Language: C++ / Java',
-                         'Modern Language: Ruby / Python'],
+                         'Low-Level Lang: Assembly / C',
+                         'OOP Lang: C++ / Java',
+                         'Modern Lang: Ruby / Python'],
                 series: [5, 2, 3, 3, 1, 2, 4, 2, 4, 4, 2]
-              }, {
+              };
+
+              var options = {
                 distributeSeries: true,
                 seriesBarDistance: 10,
                 axisX: {
@@ -353,7 +361,89 @@
                   },
                   // scaleMinSpace: 15
                 }
-              }).on('draw', function(data) {
+              };
+
+              var responsiveOptions = [
+                // Extra Small Devices, Phones 
+                ['screen and (max-width: 480px)', {
+                  // width: 400,
+                  // height: 600,
+                  seriesBarDistance: 1,
+                  axisX: {
+                    labelInterpolationFnc: function (value) {
+                      return value.substr(0, value.indexOf(" "));
+                    }
+                  },
+                  axisY: {
+                    offset: 68, 
+                    labelInterpolationFnc: function(value) {
+                      str = '';
+                      switch (value){
+                        case 1:
+                          str = 'Basic';
+                          break;
+                        case 2:
+                          str = 'Novice';
+                          break;
+                        case 3:
+                          str = 'Intermediate';
+                          break;
+                        case 4:
+                          str = 'Advanced';
+                          break;
+                        case 5:
+                          str = "Expert";
+                          break;
+                      }
+                      return str;
+                    }
+                  }
+                }],
+                // Small Devices, Tablet
+                ['screen and (min-width: 481px) and (max-width: 768px)', {
+                  seriesBarDistance: 5,
+                  axisX: {
+                    labelInterpolationFnc: function (value) {
+                      return value.substr(0, value.indexOf(":"));
+                    }
+                  },
+                  axisY: {
+                    offset: 68, 
+                    labelInterpolationFnc: function(value) {
+                      str = '';
+                      switch (value){
+                        case 1:
+                          str = 'Basic';
+                          break;
+                        case 2:
+                          str = 'Novice';
+                          break;
+                        case 3:
+                          str = 'Intermediate';
+                          break;
+                        case 4:
+                          str = 'Advanced';
+                          break;
+                        case 5:
+                          str = "Expert";
+                          break;
+                      }
+                      return str;
+                    }
+                  }
+                }],
+                // Medium Devices, Desktop
+                ['screen and (min-width: 992px)', {
+                  seriesBarDistance: 10,
+                  axisX: {
+                    labelInterpolationFnc: function (value) {
+                      return value;
+                    }
+                  }
+                }]
+              ];
+
+              var chart = new Chartist.Bar('.ct-chart', data, options, responsiveOptions).on('draw', function(data) {
                 if(data.type === 'bar') {
                   data.element.attr({
                     style: 'stroke-width: 30px'
