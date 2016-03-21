@@ -319,8 +319,8 @@
             //using anchorLink
             if(anchorLink == 'skills'){
               var data = {
-                labels: ['Basic FrontEnd: HTML5 / CSS3 / JavaScript', 
-                         'FrontEnd Library: jQuery / React JS / Angular JS', 
+                labels: ['Basic Web: HTML5 / CSS3 / JavaScript', 
+                         'FrontEnd Lib: jQuery / React JS / Angular JS', 
                          'Web Framework: Ruby on Rails', 
                          'RDBS: MySQL / MS-SQL / PostgreSQL', 
                          'NoSQL: MongoDB', 'Baas: Parse / Firebase', 
@@ -371,7 +371,7 @@
                   seriesBarDistance: 1,
                   axisX: {
                     labelInterpolationFnc: function (value) {
-                      return value.substr(0, value.indexOf(" "));
+                      return value.substr(0, value.indexOf(":"));
                     }
                   },
                   axisY: {

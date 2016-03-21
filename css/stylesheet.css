@@ -129,25 +129,15 @@
 }
 
 /*destktop*/
-@media only screen and (min-width: 992px){
+@media only screen and (min-width: 993px){
     .ct-label{
         font-size: 1.25rem !important;
     }
-    .ct-horizontal{
-        /* Safari */
-        -webkit-transform: rotate(-90deg) !important;
+}
 
-        /* Firefox */
-        -moz-transform: rotate(-90deg) !important;
-
-        /* IE */
-        -ms-transform: rotate(-90deg) !important;
-
-        /* Opera */
-        -o-transform: rotate(-90deg) !important;
-
-        /* Internet Explorer */
-        filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3) !important;
+@media only screen and (min-width: 769px) and (max-width: 992px){
+    .ct-label{
+        font-size: 1rem !important;
     }
 }
 
@@ -177,7 +167,7 @@
 /*mobile*/
 @media only screen and (max-width: 480px){
     .ct-label{
-        font-size: 1.25rem !important;
+        font-size: 1.1rem !important;
     }
     .ct-horizontal{
         /* Safari */
