@@ -225,16 +225,20 @@
 #section0{
     overflow: hidden;
 }
-/*
-.ct-chart-bar .ct-label.ct-horizontal.ct-end {
-  display: block !important; 
-  overflow: hidden !important;
-  text-overflow: ellipsis !important;
-  white-space: nowrap !important;
-  transform: rotate(-30deg) !important;
-  transform-origin: 100% 0 !important;
-  text-align: right !important;
-  max-height: 1.5em !important;
-  min-width: 100px !important;
-  max-width: 100px !important;
-}*/
+
+.profilepic{
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #cccccc;
+    left: 130%;
+    position:relative;
+}
+
+#section1 p{
+    display:none;
+}
+
+#section1 .progress{
+    display: none;
+}

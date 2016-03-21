@@ -21,6 +21,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.8/jquery.fullPage.min.css">
   <!-- chartist js css -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
+  <!-- jquery ui css -->
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
 
   <title>Dongwoo Son | Developer</title>
 
@@ -97,9 +99,11 @@
     </div>
 
     <div class="section" id="section1">
+
+      <img id="centerimg" class="img-responsive profilepic" src="image/profile.png">
+
       <div class="container">
         <div class="block" id="section-2">
-          <!-- <h1 class="page-header">About</h1> -->
           <p class="lead">Bachelor of Computer Science</p>
           <p>@ University of Waterloo</p>
           <p>in progress..</p>
@@ -289,6 +293,7 @@
 
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.8/jquery.fullPage.min.js"></script>
   <script src="https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
@@ -315,6 +320,18 @@
         },
         afterLoad: function(anchorLink, index){
             var loadedSection = $(this);
+
+            // callback ease out
+            if(anchorLink == 'about'){
+              //moving the image
+              $('#section1').find('.profilepic').delay(500).animate({
+                left: '0%'
+              }, 1500, 'easeOutBounce');
+              $('#section1').find('p').first().fadeIn(1800, function(){
+                $('#section1').find('p').last().fadeIn(1800);
+                $('#section1').find('.progress').last().fadeIn(1800);
+              });
+            }
 
             //using anchorLink
             if(anchorLink == 'skills'){
