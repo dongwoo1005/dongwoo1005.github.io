@@ -104,9 +104,7 @@
 
       <div class="container">
         <div class="block" id="section-2">
-          <p class="lead">Bachelor of Computer Science</p>
-          <p>@ University of Waterloo</p>
-          <p>in progress..</p>
+          <p class="lead">Bachelor of Computer Science @ UWaterloo</p>
           <div class="progress">
             <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="62.5" aira-valuemin="0" aria-valuemax="100" style="width: 77.7%;">
             </div>
@@ -248,7 +246,7 @@
       <div class="container">
         <div class="block" id="section-6">
             <!-- <h1 class="page-header">Contact</h1> -->
-            <p class="lead">I'd love to work with you! Get in touch with me</p>
+            <p class="lead">I'd love to work with you! Get in touch with me!</p>
             <p>I'm looking for a software engineer position in US / Canada from January to April 2017</p>
             <form class="contact-form" action="//formspree.io/woos931005@hotmail.com"
                   method="POST">        
@@ -349,10 +347,10 @@
               //moving the image
               $('#section1').find('.profilepic').delay(500).animate({
                 left: '0%'
-              }, 1500, 'easeOutBounce');
-              $('#section1').find('p').first().fadeIn(1800, function(){
-                $('#section1').find('p').last().fadeIn(1800);
-                $('#section1').find('.progress').last().fadeIn(1800);
+              }, 500, 'easeInOutExpo');
+              $('#section1').find('p').first().fadeIn(500, function(){
+                $('#section1').find('p').last().fadeIn(500);
+                $('#section1').find('.progress').last().fadeIn(500);
               });
             }
 
@@ -493,8 +491,8 @@
 
               // Let's put a sequence number aside so we can use it in the event callbacks
               var seq = 0,
-                delays = 80,
-                durations = 500;
+                delays = 32,
+                durations = 200;
 
               // Once the chart is fully created we reset the sequence
               chart.on('created', function() {
@@ -510,7 +508,7 @@
                   data.element.animate({
                     opacity: {
                       // The delay when we like to start the animation
-                      begin: seq * delays + 1000,
+                      begin: seq * delays + 400,
                       // Duration of the animation
                       dur: durations,
                       // The value where the animation should start
